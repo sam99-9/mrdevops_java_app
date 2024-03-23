@@ -1,4 +1,4 @@
-@library('my-shared-library') _
+@Library('my-shared-library') _
 
 pipeline{
 
@@ -9,14 +9,10 @@ pipeline{
         stage('Git Checkout'){
             
             steps{
-
-                script{
-                 
-                    gitcheckout(
+            gitcheckout(
                         branch: "main",
                         url: "https://github.com/sam99-9/mrdevops_java_app.git"
-                    )
-                }
+            )
             }
         }
     }
