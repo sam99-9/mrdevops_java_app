@@ -23,10 +23,7 @@ pipeline{
                     mvnTest()
                 }
             
-            
             }
         }
     }
-    
-    
 }
